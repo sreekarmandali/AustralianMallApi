@@ -1,0 +1,31 @@
+#creating database
+create database sreekar;
+
+#grating privilages to local user;
+
+grant all privileges on sreekar.* to root@localhost identified by 'pswd';
+
+#scripts for creating tables
+CREATE TABLE sreekar.toilets (
+  tableId int(11) NOT NULL AUTO_INCREMENT,
+  Distance int(11) NOT NULL,
+  closingTime time DEFAULT NULL,
+  cleaningTime time DEFAULT NULL,
+  createdAt timestamp NULL DEFAULT NULL,
+  updatedAt timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`tableId`)
+),
+
+CREATE TABLE sreekar.ratings (
+  ratingsId int(6) NOT NULL AUTO_INCREMENT,
+  userName varchar(30) NOT NULL,
+  rating int(11) NOT NULL,
+  reviewComment varchar(350) DEFAULT NULL,
+  createdAt timestamp NULL DEFAULT NULL,
+  updatedAt timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`ratingsId`)
+) ;
+
+
+
+
