@@ -26,6 +26,16 @@ CREATE TABLE sreekar.ratings (
   PRIMARY KEY (`ratingsId`)
 ) ;
 
+INSERT INTO sreekar.Toilets(distance,closingTime,cleaningTime)
+VALUES(4, '23:30:00','12:20:00');
 
+INSERT INTO sreekar.Toilets(distance,closingTime,cleaningTime)
+VALUES(4, '12:30:00','05:30:00');
+
+INSERT INTO sreekar.Toilets(distance,closingtime,cleaningTime)
+VALUES(6, '10:30:00','06:30:00');
+
+INSERT INTO sreekar.Toilets(distance,closingtime,cleaningTime)
+VALUES(4, '23:30:00','05:30:00');
 
 
