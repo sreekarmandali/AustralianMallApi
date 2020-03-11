@@ -4,7 +4,7 @@ const { to, ReE, ReS } = require('../services/util_service');
 const add = async function (req, res) {
     const BODY = req.body;
 
-    if ( !BODY.userName && !BODY.ratings && !BODY.reviewComments) {
+    if ( !BODY.userName && !BODY.rating && !BODY.reviewComment) {
         return ReE(res, 'Please enter an name or location or bill or itemcount.');
     } else {
         let err, ratings;
